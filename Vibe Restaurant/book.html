@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="icon" href="./images/icon/faviicon.png" type="icon">
+</head>
+
+<body>
+
+    <section class="banner">
+        <h2>BOOK YOUR TABLE NOW</h2>
+        <div class="card-container">
+
+            <div class="card-img">
+                <!-- Img added in css -->
+            </div>
+
+            <div class="card-content">
+                <h3>Reservation</h3>
+                <form>
+                    <div class="form-row">
+                        <select name="days" id="day">
+                            <option value="day-select">Select Day</option>
+                            <option value="sunday">Sunday</option>
+                            <option value="monday">Monday</option>
+                            <option value="tuesday">Tuesday</option>
+                            <option value="wednesday">Wednesday</option>
+                            <option value="thursday">Thursday</option>
+                            <option value="friday">Friday</option>
+                            <option value="saturday">Saturday</option>
+                        </select>
+                        <div class="form-row">
+                            <input type="time"id="tim">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" id="fn" placeholder="Full Name">
+                        <input type="text" id="pn" placeholder="Phone Number">
+                    </div>
+                    <div class="form-row">
+                        <input type="number" id="person" placeholder="How Many Persons?" min="1">
+                        <input type="button" onclick="book()" value="BOOK TABLE">
+                    </div>
+                </form>
+            </div>
+        </div><br>
+
+        <div id="dt">
+        </div>
+        <div class="btn">
+           <a href="index.html">HOME</a>
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+    <script src="./jquery.js"></script>
+</body>
+
+</html>
